@@ -50,7 +50,7 @@ env:
   TXT_MAIN_PAGE_INTRO: >-
     \This Helpful Information web-App (HIA) is made to brief you for and answer your frequently asked questions about the NLRC IDM 2025.  
     \n
-    Please click on the button below to access all information.
+    \Please click on the button below to access all information.
   #
   # An (optional) notice on the top of the screen, can be overwritten on sub-pages per-region by each region's sheet.
   TXT_MAIN_PAGE_NOTICE: ''
@@ -168,7 +168,7 @@ jobs:
       - name: Build
         working-directory: 'helpful-information'
         # NOTE: When the instance will be run on a custom (sub-)domain, remove the `--base-href`-flag+value.
-        run: 'npm run build:production -- --output-path=../www --base-href=/${GITHUB_REPOSITORY#*/}/'
+        run: 'npm run build:production -- --output-path=../www'
         env:
           # See all variables: https://github.com/rodekruis/helpful-information/blob/main/.env.example
           NG_PRODUCTION: 'true'
